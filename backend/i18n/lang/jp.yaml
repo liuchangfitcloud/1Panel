@@ -1,0 +1,73 @@
+ErrInvalidParams: "リクエストパラメータエラー: {{ .detail }}"
+ErrTokenParse: "トークン生成エラー: {{ .detail }}"
+ErrInitialPassword: "元のパスワードが正しくありません"
+ErrInternalServer: "サーバ内部エラー: {{ .detail }}"
+ErrRecordExist: "記録がすでに存在します"
+ErrRecordNotFound: "記録が見つかりませんでした"
+ErrStructTransform: "タイプ変換失敗: {{ .detail }}"
+ErrNotLogin: "ユーザーが未ログイン: {{ .detail }}"
+ErrPasswordExpired: "現在のパスワードは期限切れです: {{ .detail }}"
+ErrNotSupportType: "現在のタイプはシステムでサポートされていません: {{ .detail }}"
+ErrApiConfigStatusInvalid: "API インターフェースへのアクセスは禁止されています: {{ .detail }}"
+ErrApiConfigKeyInvalid: "API インターフェースキーが間違っています: {{ .detail }}"
+ErrApiConfigIPInvalid: "API インターフェースへの呼び出し元IPがホワイトリストに含まれていません: {{ .detail }}"
+ErrApiConfigDisable: "このインターフェースはAPI呼び出しに使用することが禁止されています: {{ .detail }}"
+
+#common
+ErrNameIsExist: "名前はすでに存在します"
+ErrDemoEnvironment: "デモサーバーでは、この操作は禁止されています!"
+ErrCmdTimeout: "コマンド実行がタイムアウトしました！"
+ErrCmdIllegal: "実行コマンドに不正な文字が含まれています。修正して再試行してください！"
+ErrPortExist: '{{ .port }} ポートは {{ .type }} [{{ .name }}] によって使用されています'
+TYPE_APP: "アプリケーション"
+TYPE_RUNTIME: "実行環境"
+TYPE_DOMAIN: "ドメイン"
+ErrTypePort: 'ポート {{ .name }} の形式が正しくありません'
+ErrTypePortRange: 'ポート範囲は 1-65535 の間で指定してください'
+Success: "成功"
+Failed: "失敗"
+SystemRestart: "システムの再起動によるタスク中断"
+
+#app
+ErrPortInUsed: "{{ .detail }} ポートがすでに使用されています！"
+ErrAppLimit: "アプリケーションのインストール数が制限を超えています"
+ErrAppRequired: "{{ .detail }} アプリをインストールしてください"
+ErrNotInstall: "アプリがインストールされていません"
+ErrPortInOtherApp: "{{ .port }} ポートはアプリ {{ .apps }} によって使用されています！"
+ErrDbUserNotValid: "既存のデータベースで、ユーザー名またはパスワードが一致しません！"
+ErrDockerComposeNotValid: "docker-compose ファイルの形式が正しくありません"
+ErrUpdateBuWebsite: 'アプリの更新に成功しましたが、ウェブサイト構成ファイルの変更に失敗しました。設定を確認してください！'
+Err1PanelNetworkFailed: 'デフォルトのコンテナネットワーク作成に失敗しました！{{ .detail }}'
+ErrFileParse: 'アプリの docker-compose ファイルの解析に失敗しました！'
+ErrInstallDirNotFound: 'インストールディレクトリが存在しません'
+AppStoreIsUpToDate: 'アプリストアはすでに最新バージョンです'
+LocalAppVersionNull: '{{.name}} アプリがバージョンと同期されていません！アプリリストに追加できません'
+LocalAppVersionErr: '{{.name}} バージョン {{.version}} の同期に失敗しました！{{.err}}'
+ErrFileNotFound: '{{.name}} ファイルが存在しません'
+ErrFileParseApp: '{{.name}} ファイルの解析に失敗しました {{.err}}'
+ErrAppDirNull: 'バージョンフォルダが存在しません'
+LocalAppErr: "アプリ {{.name}} の同期に失敗しました！{{.err}}"
+ErrContainerName: "コンテナ名がすでに存在します"
+ErrAppSystemRestart: "1Panel の再起動によるタスク中断"
+ErrCreateHttpClient: "HTTPリクエストの作成に失敗しました {{.err}}"
+ErrHttpReqTimeOut: "リクエストがタイムアウトしました {{.err}}"
+ErrHttpReqFailed: "リクエストに失敗しました {{.err}}"
+ErrHttpReqNotFound: "ファイルが存在しません"
+ErrNoSuchHost: "ネットワーク接続に失敗しました"
+ErrImagePullTimeOut: 'イメージの取得がタイムアウトしました'
+ErrContainerNotFound: '{{ .name }} コンテナが存在しません'
+ErrContainerMsg: '{{ .name }} コンテナが異常です。ログを確認してください'
+ErrAppBackup: '{{ .name }} アプリのバックアップに失敗しました エラー {{.err}}'
+ErrImagePull: 'イメージの取得に失敗しました {{.err}}'
+ErrVersionTooLow: '現在の 1Panel のバージョンが低すぎるため、アプリストアを更新できません。バージョンをアップグレードしてから操作してください'
+ErrAppNameExist: 'アプリ名がすでに存在します'
+AppStoreIsSyncing: 'アプリストアは同期中です。しばらくしてから再試行してください'
+ErrGetCompose: "docker-compose.yml ファイルの取得に失敗しました！{{ .detail }}"
+ErrAppWarn: "状態異常です。ログを確認してください"
+ErrAppParamKey: "パラメータ {{ .name }} フィールド異常"
+ErrAppUpgrade: "アプリ {{ .name }} のアップグレードに失敗しました {{ .err }}"
+AppRecover: "アプリ  {{ .name }} のロールバック"
+PullImageStart: "イメージ {{ .name }} の取得を開始"
+PullImageSuccess: "イメージの取得に成功しました"
+UpgradeAppStart: "アプリ {{ .name }} のアップグレードを開始"
+UpgradeAppSuccess: "アプリ  {{ .name }} のアップグレードに成功しました"
