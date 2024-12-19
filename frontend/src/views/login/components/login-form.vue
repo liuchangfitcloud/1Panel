@@ -278,6 +278,8 @@ function handleCommand(command: string) {
         dropdownText.value = 'English';
     } else if (command === 'tw') {
         dropdownText.value = '中文(繁體)';
+    } else if (command === 'jp') {
+        dropdownText.value = '日本語';
     }
     nextTick(() => {
         loginFormRef.value.clearValidate();
