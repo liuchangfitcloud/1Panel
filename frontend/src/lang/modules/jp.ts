@@ -11,8 +11,8 @@ const message = {
         false: '間違い',
         colon: '：',
         example: '例えば、',
-        fit2cloud: 'fit2cloud',
-        lingxia: 'l ing',
+        fit2cloud: 'FIT2CLOUD',
+        lingxia: 'Lingxia',
         button: {
             create: '作成する',
             add: '追加',
